@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive Navigation Menu</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: transparent;
+      transition: background-color 0.3s, box-shadow 0.3s;
+      z-index: 1000;
+    }
+
+    header.scrolled {
+      background-color: #333;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      padding: 0.5rem 1rem;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: white;
+      color: #333;
+      border-radius: 5px;
+    }
+
+    section {
+      padding: 100px 20px;
+      margin-top: 80px;
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+
+  <header id="navbar">
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home" class="content">
+    <h1>Welcome to My Website</h1>
+    <p>This is a sample interactive navigation menu demo.</p>
+  </section>
+
+  <section id="about" class="content">
+    <h2>About</h2>
+    <p>This section is all about the interactive behavior of the navigation bar.</p>
+  </section>
+
+  <section id="services" class="content">
+    <h2>Services</h2>
+    <p>Here are some services that we offer with elegant UX navigation effects.</p>
+  </section>
+
+  <section id="contact" class="content">
+    <h2>Contact</h2>
+    <p>Get in touch through our fixed nav bar or social channels.</p>
+  </section>
+
+  <script>
+    window.addEventListener('scroll', function () {
+      var navbar = document.getElementById('navbar');
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+  </script>
+
+</body>
+</html>
