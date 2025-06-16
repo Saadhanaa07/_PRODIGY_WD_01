@@ -20,6 +20,6 @@ A responsive and interactive navigation menu built using:
 🌐 Access the Project  
 
 🔗 GitHub Repository  
-[https://github.com/Saadhanaa07/PRODIGY_WD_01](https://github.com/Saadhanaa07/PRODIGY_WD_01)
+[https://github.com/Saadhanaa07/_PRODIGY_WD_01](https://github.com/Saadhanaa07/_PRODIGY_WD_01)
 
   
